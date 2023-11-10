@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/66cb621fdc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/perfil.css">
+    <link rel="stylesheet" href="/css/resetvar.css">
+    <title>Fractus | Sua comunidade de jogos</title>
+</head>
+
+<body>
+    <div class="body">
+
+        <!--
+            - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                                POSTER
+
+            - - - - - - - - - - - - - - - - - - - - - - - - -
+        -->
+
+        <header class="poster"></header>
+
+
+        <!--
+            - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                            SIDEBAR
+
+            - - - - - - - - - - - - - - - - - - - - - - - - -
+        -->
+
+        <aside class="sidebar">
+            <nav class="navegacao">
+                <span class="logo-nav">
+                    <span>
+                        <h2 class="text-dark">
+                            <i class="fa-regular fa-snowflake fa-xl flake"></i>
+                            Fractus
+                        </h2>
+                    </span>
+                </span>
+
+                <li class="ctn-items">
+                    <a href="/html/index.html" class="items text-dark">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+
+                    <a href="/html/comunidade.html" class="items text-dark items-arrow">
+                        <span class="ttl-item">
+                            <i class="fa-solid fa-users"></i>
+                            Comunidades
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+
+                    <a href="/html/chat.html" class="items text-dark items-arrow">
+                        <span class="ttl-item">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            Chat
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+
+                    <a href="#" class="items text-dark">
+                        <i class="fa-solid fa-store"></i>
+                        Loja
+                    </a>
+
+                    <a href="/html/news.html" class="items text-dark items-arrow">
+                        <span class="ttl-item">
+                            <i class="fa-regular fa-newspaper"></i>
+                            News
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+
+                    <a href="#" class="items text-dark items-arrow">
+                        <span class="ttl-item">
+                            <i class="fa-solid fa-user"></i>
+                            Perfil
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+
+                    <a href="#" class="items text-dark items-arrow">
+                        <span class="ttl-item">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            Mais
+                        </span>
+                    </a>
+
+                    <div class="alterar-modo items">
+                        <label>
+                            <span class="action">
+                                <input type="checkbox" name="" id="light">
+                                <i class="fa-solid fa-circle-half-stroke text-dark"></i>
+                                <p class="ttl-item text-dark" id="mudar-nome" onclick="alterarTexto()">Modo Claro</p>
+                            </span>
+
+                        </label>
+                        </input>
+                    
+                </li>
+            </nav>
+        </aside>
+
+
+        <section class="pt-principal">
+            <div class="pt">
+
+                <!--
+                    - - - - - - - - - - - - - - - - - - - - -
+
+                                    PERFIL
+
+                    - - - - - - - - - - - - - - - - - - - - - 
+                -->
+
+
+                <div class="perfil">
+                    <div class="foto-de-perfil"></div>
+                    <h2 id="nomeDoUsuario">
+                        <p>Nietzsche</p>
+                    </h2>
+                    <p id="MsgPre">
+                        Procuro novos amigos
+                    </p>
+
+                    <span class="redes-sociais">
+                        <a alt="Instagram" href="">
+                            <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-tiktok fa-lg" style="color: #ffffff;"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-twitch fa-lg" style="color: #ffffff;"></i>
+                        </a>
+                    </span>
+                    <div class="box-info-status">
+                        <span class="box-info">
+                            <h2>23.450</h2>
+                            <p>Amigos</p>
+                        </span>
+                        <hr>
+                        <span class="box-info">
+                            <h2>23.450</h2>
+                            <p>Seguidores</p>
+                        </span>
+                    </div>
+
+
+                    <span class="box-btn-perfil">
+                        <input type="button" value="Editar" class="btn-perfil">
+                        <input type="button" value="Salvar" class="btn-perfil"> <!--talvez precise de um a-->
+                    </span>
+                </div>
+
+                <!--
+                    - - - - - - - - - - - - - - - - - - - - - - - -
+
+                                        AMIGOS
+
+                    - - - - - - - - - - - - - - - - - - - - - - - -
+                -->
+
+
+                <div class="amigos">
+                    <span class="ctn-title-areas">
+                        <h2 class="title-areas">Amigos</h2>
+                        <span class="edit-bio">
+                            <button>
+                                <i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i>
+                            </button>
+                        </span>
+                    </span>
+                    <hr>
+
+                    <ul class="ctn-amigos">
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                        <li class="box-amigos">
+                            <div class="foto-perfil-amigos"></div>
+                            <span class="status-amigo">
+                            <p>Nome do amigo</p>
+                            <p class="situacao-amigo">
+                                <i class="fa-solid fa-circle fa-2xs point" style="color: #00ff11;"></i>
+                                online
+                            </p>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!--
+                    - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                                        BIO
+
+                    - - - - - - - - - - - - - - - - - - - - - - - - -
+                -->
+
+
+                <div class="bio">
+                    <span class="ctn-title-areas">
+                        <h2 class="title-areas">Bio</h2>
+                        <span class="edit-bio">
+                            <button>
+                                <i class="fa-solid fa-pen-to-square fa-xl" style="color: #2986ff;"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-check fa-xl" style="color: #0f0;"></i>
+                            </button>
+                        </span>
+                    </span>
+                    <hr>
+
+                    <textarea name="" id="" cols="10" rows="50" placeholder="Escreva sobre você aqui!"></textarea>
+
+                </div>
+
+                <!--
+                    - - - - - - - - - - - - - - - - - - - -
+
+                                    RANKING
+
+                    - - - - - - - - - - - - - - - - - - - -
+                -->
+                <div class="ranking">
+                    <table>
+                        <thead id="thead">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Nick</th>
+                                <th>Pontuação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">1</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">2</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">3</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">4</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">5</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">6</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">7</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td>
+                                    <p class="n-rank item-tb">8</p>
+                                </td>
+                                <td>
+                                    <p class="n-nick item-tb">Nome</p>
+                                </td>
+                                <td>
+                                    <p class="n-pontuação item-tb">100</p>
+                                </td>
+                            </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script src="/js/script.js"></script>
+
+</html>
