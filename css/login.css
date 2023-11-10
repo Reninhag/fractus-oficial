@@ -1,0 +1,94 @@
+body {
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+::selection{
+    color: #11100b;
+    background:#c795ff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+input {
+    width: 15px;
+    height: 15px;
+    caret-color: #ff80b6;
+}
+
+#termos {
+    accent-color: #c795ff;
+}
+
+label {
+    margin-left: 5px;
+    font-family: "Poppins";
+    font-size: 1em;
+    color: #fff;
+}
+
+label a{
+    color: #ff80b6;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #c795ff;
+    padding: 10px;
+    width: 200px;
+    margin: 0.5em;
+    outline: none;
+    color: #fff;
+}
+
+.input::placeholder{
+    color:#fff;
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+
+#btn {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 150px; 
+    height: 40px;  
+    background-color: var(--color-principal-3);
+    cursor: pointer;
+    color: #fff;
+}
+
+.box-login{
+    color: #fff;
+    font-size: 1.5em;;
+    margin-bottom: 1em;
+}
+
+.box-input{
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+}

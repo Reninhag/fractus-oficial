@@ -1,0 +1,652 @@
+body {
+/*Box model stuff*/
+    background-color: #2d2d2d;
+}
+
+/*
+--------------------------------------------------------
+
+
+                 ESTILIZAÇÃO DO GRID
+
+
+--------------------------------------------------------
+*/
+
+.body {
+/*Display stuff*/
+    display: grid;
+    grid-auto-rows: 33.33vh;
+    grid-template-areas:         "sidebar poster       poster       poster       poster       poster"    "sidebar pt-principal pt-principal pt-principal pt-principal pt-principal"    "sidebar pt-principal pt-principal pt-principal pt-principal pt-principal";
+    grid-template-columns: repeat(6 , 1fr);
+}
+
+.poster {
+/*Display stuff*/
+    grid-area: poster;
+/*Box model stuff*/
+    background-color: #242424;
+}
+
+.pt-principal {
+/*Display stuff*/
+    grid-area: pt-principal;
+/*Box model stuff*/
+    background-color: #2d2d2d;
+}
+
+
+.pt > div{
+/*Box model stuff*/
+    border-radius: 16px;
+    background-color: #3d3d3d;
+/*Manipulations stuff*/
+    transition: 0.6s;
+/*Miscellaneous*/
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.pt {
+/*Display stuff*/
+    display: grid;
+    grid-auto-rows: minmax(80px, 150px);
+    grid-template-areas:       "perfil perfil  bio     bio     bio     amigos amigos amigos"    "perfil perfil  ranking ranking ranking amigos amigos amigos"      "perfil perfil  ranking ranking ranking amigos amigos amigos";
+    grid-template-columns: repeat(7, 1fr);
+/*Box model stuff*/
+    margin: 15px;
+/*Miscellaneous*/
+    gap: 20px;
+}
+
+.perfil {
+/*Display stuff*/
+    grid-area: perfil;
+/*Positioning stuff*/
+    position: relative;
+    top: -50px;
+/*Box model stuff*/
+    height: 510px;
+}
+
+
+.ranking {
+/*Display stuff*/
+    grid-area: ranking;
+}
+
+
+/*
+------------------------------------------------------------
+
+
+                        SIDEBAR
+
+
+------------------------------------------------------------
+*/
+
+
+
+.sidebar {
+/*Display stuff*/
+    grid-area: sidebar;
+/*Box model stuff*/
+    background-color: #212121;
+}
+
+ul{
+/*Display stuff*/
+    display: flex;
+}
+.Item{
+/*Box model stuff*/
+  margin-left: 200px; 
+/*Typography stuff*/
+  font-size: 20px;
+}
+
+.a {
+/*Positioning stuff*/
+    position: relative;
+/*Typography stuff*/
+    text-decoration: none;  
+    color: #fff;  
+   
+  }
+  
+.a::after {
+/*Display stuff*/
+    content: "";
+/*Positioning stuff*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+/*Box model stuff*/
+    width: 0%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+/*Manipulations stuff*/
+    transition: 0.4s ease-in-out 0s;
+  }
+  
+.a:hover::after {
+/*Box model stuff*/
+    width: 100%;
+   
+}
+
+
+.lightMode {
+/*Box model stuff*/
+   background-color: #e8e9ff;
+}
+
+.lightMode .text-dark{
+/*Typography stuff*/
+    color: var(--color-font-dark);
+}
+
+/*position: fixed;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 50px;
+padding: 0 20px;
+background: linear-gradient(to right, var(--color-principal-1), var(--color-principal-2), var(--color-principal-3));
+z-index: 19;*/
+
+.lightMode header {
+/*Box model stuff*/
+    background: linear-gradient(to right, var(--color-principal-1-light), var(--color-principal-2-light), var(--color-principal-3-light));
+}
+
+.navegacao {
+/*Box model stuff*/
+    padding: 20px 10px 20px 20px;
+    background-color: #212121;
+}
+
+.lightMode .navegacao {
+/*Box model stuff*/
+    background-color: #f9f9f9;
+}
+.lightMode .text-dark{
+/*Typography stuff*/
+    color: #080808;
+}
+
+
+.logo-nav {
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-nav h2 {
+/*Box model stuff*/
+    margin: 20px 5px;
+/*Typography stuff*/
+    color: var(--color-font);
+}
+
+
+.logo-nav {
+/*Display stuff*/
+    display: flex;
+    justify-content: space-between;
+/*Box model stuff*/
+    margin-right: 5px;
+}
+
+.flake {
+/*Typography stuff*/
+    color: var(--color-principal-2);
+}
+
+.items {
+/*Display stuff*/
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+/*Box model stuff*/
+    margin-bottom: 5px;
+    padding: 8px 0 8px 12px;
+/*Typography stuff*/
+    font-size: var(--tamanho-fonte);
+    color: var(--color-font);
+}
+
+.items-arrow{
+/*Display stuff*/
+    justify-content: space-between;
+}
+
+.items i {
+/*Box model stuff*/
+    margin-right: 10px;
+}
+
+.items::before{
+/*Display stuff*/
+    content: "";
+/*Positioning stuff*/
+    position: absolute;
+    left: 1px;
+/*Box model stuff*/
+    width: 4px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.items:hover {
+/*Typography stuff*/
+    color: var(--color-font);
+}
+
+.items:hover::before {
+/*Box model stuff*/
+    border-radius: 8px;
+    background-color: var(--color-principal-2);
+/*Miscellaneous*/
+    box-shadow: 5px 5px 20px rgba(163, 82, 255, 0.5);
+}
+
+.lightMode .items:hover{
+/*Typography stuff*/
+    color: var(--color-font-dark);
+}
+
+.lightMode .items:hover::before {
+/*Box model stuff*/
+    border-radius: 8px;
+    background-color: var(--color-principal-1-light);
+/*Miscellaneous*/
+    box-shadow: 5px 5px 20px rgb(255, 128, 182);
+}
+
+.action {
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+/*Box model stuff*/
+    width: 240px;
+/*Typography stuff*/
+    color: #000;
+/*Miscellaneous*/
+    user-select: none;
+    cursor: pointer;
+}
+
+.action input {
+/*Miscellaneous*/
+    appearance: none;
+}
+
+.action i, p {
+/*Typography stuff*/
+    color: var(--color-font);
+}
+
+
+/*
+-------------------------------------------------------------
+
+
+                        POSTER
+
+
+-------------------------------------------------------------
+*/
+
+
+.poster {
+/*Box model stuff*/
+   background-image: url(/assets/teste-banner.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/*
+-------------------------------------------------------------
+
+
+                        PERFIL
+
+
+-------------------------------------------------------------
+*/
+
+.perfil {
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*Box model stuff*/
+    height: 540px;
+/*Typography stuff*/
+    color: #fff;
+}
+
+.foto-de-perfil {
+/*Box model stuff*/
+    width: 120px;
+    height: 120px;
+    margin-top: 40px;
+    border: 3px solid #a7a7a7;
+    border-radius: 50%;
+    background-image: url(/assets/fot0-perfil.jpg);
+    background-size: cover;
+/*Miscellaneous*/
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+#nomeDoUsuario {
+/*Box model stuff*/
+    margin-top: 8px;
+/*Typography stuff*/
+    font-size: 1.875em;
+    font-weight: 300;
+}
+
+.redes-sociais {
+/*Display stuff*/
+    display: flex;
+    justify-content: space-around;
+/*Box model stuff*/
+    margin-top: 20px;
+/*Miscellaneous*/
+    gap: 12px;
+}
+
+
+.box-info-status {
+/*Display stuff*/
+    display: flex;
+/*Box model stuff*/
+    margin-top: 20px;
+}
+
+.box-info {
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+    margin: 0 10px;
+}
+
+.box-info > h2{
+/*Typography stuff*/
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #ff3c90;
+}
+
+hr  {
+/*Box model stuff*/
+    border-color: #8d8d8d;
+}
+
+.box-btn-perfil{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+     margin-top: 30px;
+}
+
+.btn-perfil {
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+    width: 100px;
+    margin-left: 10px;
+    padding: 7px;
+    border: none;
+    border: 1px solid var(--color-principal-3);
+    border-radius: 6px;
+    background-color: var(--color-principal-3);
+/*Typography stuff*/
+    color: #f5f5f5;
+/*Miscellaneous*/
+    cursor: pointer;
+}
+
+.btn-perfil:nth-child(even){
+/*Box model stuff*/
+    background-color: transparent;
+/*Typography stuff*/
+    color: var(--color-principal-3);
+}
+
+/*
+-----------------------------------------------------
+
+
+                        BIO
+
+
+-----------------------------------------------------
+*/
+
+.bio {
+/*Display stuff*/
+    grid-area: bio;
+/*Typography stuff*/
+    color: #f5f5f5;
+}
+
+.title-areas {
+/*Typography stuff*/
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+.ctn-title-areas {
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+/*Box model stuff*/
+    margin: 0 20px;
+}
+
+.edit-bio {
+/*Display stuff*/
+    display: flex;
+/*Miscellaneous*/
+    gap: 15px;
+}
+
+.edit-bio > button {
+/*Box model stuff*/
+    border: none;
+    background-color: transparent;
+/*Miscellaneous*/
+    cursor: pointer;
+}
+
+.bio > textarea{
+/*Box model stuff*/
+    width: 90%;
+    height: 80px;
+    margin: 10px 0 10px 15px;
+    border: none;
+    outline-color: transparent;
+    outline-style: none;
+    background-color: transparent;
+/*Typography stuff*/
+    font-size: 1em;
+    color: #f5f5f5;
+/*Miscellaneous*/
+    caret-color: #ff1493;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+/*Box model stuff*/
+    background-color: transparent;
+}
+
+/*
+---------------------------------------------
+
+
+                AMIGOS
+
+
+---------------------------------------------
+*/
+
+
+.amigos {
+/*Display stuff*/
+    grid-area: amigos;
+}
+
+.ctn-amigos {
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+    height: 100%;
+/*Miscellaneous*/
+    overflow: scroll;
+}
+
+.ctn-amigos::-webkit-scrollbar{
+/*Box model stuff*/
+    width: 5px;
+    background-color: var(--color-principal-1-light);
+}  
+
+.box-amigos {
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+/*Box model stuff*/
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #4a4a4a;
+}
+
+.foto-perfil-amigos {
+/*Box model stuff*/
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #5a5a5a;
+    background-image: url(/assets/user2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ctn-amigos:nth-child(1){
+/*Box model stuff*/
+    margin-top: 30px;
+}
+
+.box-amigos:nth-last-child(-n+1) {
+/*Box model stuff*/
+    margin-bottom: 30px;
+}
+
+.box-amigos > p {
+/*Typography stuff*/
+    font-size: 1.1em;
+}
+
+.status-amigo {
+/*Box model stuff*/
+    margin-left: 20px;
+}
+
+.situacao-amigo > i {
+/*Box model stuff*/
+    margin-right: 4px;
+}
+.situacao-amigo {
+/*Typography stuff*/
+    font-size: 0.7em;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    border-collapse: collapse;
+}
+
+tbody {
+    overflow: scroll;
+}
+
+.tr{
+    height: 20px;
+}
+
+tbody > .tr:first-child{
+    font-weight: 700; 
+    border-bottom: 4px solid #daa520;
+}
+
+tbody > .tr:nth-child(2){
+    font-weight: 700;
+    border-bottom: 4px solid #c0c0c0;
+}
+
+tbody > .tr:nth-child(3){
+    font-weight: 700;
+    border-bottom: 4px solid #cd7f32;
+}
+
+tbody >.tr:hover {
+    background-color: rgba(255, 128, 183, 0.5);
+}
+
+
+.tr:nth-child(even){
+    background-color: #5a5a5a;
+}
+
+.tr:nth-child(odd){
+    background-color: #666666;
+}
+
+
+thead{
+  background-color: #333;
+  color: #fff;
+  height: 40px;
+}
+
+.item-tb {
+    color: #f3f3f3;
+}
+
+.n-rank {
+    text-align: center;
+}
+
+.n-rank::before {
+    content: "#";
+}
+
+#thead{
+    background-color: #393939;
+}

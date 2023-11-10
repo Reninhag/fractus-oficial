@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Open+Sans:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+    --color-principal-1-light: #ff80b6;
+    --color-principal-2-light: #c795ff;
+    --color-principal-3-light: #58a0ff;
+    --color-principal-1: #ff3c90;
+    --color-principal-2: #a352ff;
+    --color-principal-3: #2986ff;
+    --color-dark-gray: #191c22;
+    --color-dark: #0a0b0c;
+    --color-font: #f5f5f5;
+    --color-font-dark: #383838;
+    --color-green: #12de94;
+    --color-pink: #ff1493;
+    --tamanho-fonte: 1.05rem;
+}
